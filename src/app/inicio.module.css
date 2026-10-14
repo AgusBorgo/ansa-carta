@@ -1,0 +1,65 @@
+.inicio {
+  max-width: 620px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 56px 20px;
+  color: #1f3b2d;
+}
+
+.marca {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #b5520f;
+}
+
+.titulo {
+  margin: 8px 0 8px;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.bajada {
+  margin: 0 0 28px;
+  color: #4a5a50;
+  line-height: 1.5;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+  row-gap: 2px;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid rgb(0 0 0 / 0.08);
+  text-decoration: none;
+}
+
+.muestra {
+  grid-row: span 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.nombre {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.detalle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

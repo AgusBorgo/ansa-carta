@@ -1,0 +1,188 @@
+{
+  "slug": "cafe-almendra",
+  "nombre": "Café Almendra",
+  "bajada": { "es": "Desayunos y meriendas de autor", "en": "Signature breakfasts and afternoon tea" },
+  "logo": "/locales/cafe-almendra/logo.svg",
+  "zonaHoraria": "America/Argentina/Buenos_Aires",
+  "idiomas": ["es", "en"],
+  "tema": {
+    "colores": {
+      "fondo": "#F7EFE5",
+      "superficie": "#FFFAF4",
+      "texto": "#3B2418",
+      "textoSuave": "#6E5446",
+      "acento": "#A4552F",
+      "sobreAcento": "#FFFFFF",
+      "linea": "#E8D9C8"
+    },
+    "fuentes": {
+      "titulos": { "familia": "Fraunces", "pesos": [600, 700], "respaldo": "serif" },
+      "texto": { "familia": "DM Sans", "pesos": [400, 500, 700], "respaldo": "sans-serif" }
+    },
+    "radio": 18
+  },
+  "contacto": {
+    "whatsapp": "5491169455966",
+    "instagram": "anse_studio_",
+    "resenaGoogle": "https://www.google.com/maps",
+    "direccion": "Dirección de ejemplo 123"
+  },
+  "horarios": [
+    { "dias": "Lunes a viernes", "horas": "8 a 21 h" },
+    { "dias": "Sábados y domingos", "horas": "9 a 21 h" }
+  ],
+  "momentos": [
+    { "id": "desayuno", "nombre": { "es": "Desayuno", "en": "Breakfast" }, "desde": "08:00", "hasta": "12:00" },
+    { "id": "brunch", "nombre": { "es": "Brunch", "en": "Brunch" }, "desde": "12:00", "hasta": "16:00" },
+    { "id": "merienda", "nombre": { "es": "Merienda", "en": "Afternoon" }, "desde": "16:00", "hasta": "21:00" }
+  ],
+  "categorias": [
+    {
+      "id": "meriendas",
+      "nombre": { "es": "Meriendas para compartir", "en": "Afternoon sets" },
+      "momentos": ["merienda"],
+      "items": [
+        {
+          "id": "merienda-almendra",
+          "nombre": { "es": "Merienda Almendra", "en": "Almendra set" },
+          "descripcion": {
+            "es": "Dos cafés o tés, budín de almendras, dos medialunas y jugo de naranja.",
+            "en": "Two coffees or teas, almond cake, two croissants and orange juice."
+          },
+          "precio": 16500,
+          "etiquetas": ["veggie"],
+          "recomendado": true
+        },
+        {
+          "id": "merienda-dulce",
+          "nombre": { "es": "Merienda dulce", "en": "Sweet set" },
+          "descripcion": {
+            "es": "Café o té, porción de torta del día y alfajor de maicena.",
+            "en": "Coffee or tea, cake of the day and a cornstarch alfajor."
+          },
+          "precio": 9800,
+          "etiquetas": ["veggie"]
+        }
+      ]
+    },
+    {
+      "id": "cafeteria",
+      "nombre": { "es": "Cafetería", "en": "Coffee" },
+      "momentos": ["desayuno", "brunch", "merienda"],
+      "items": [
+        { "id": "espresso", "nombre": { "es": "Espresso", "en": "Espresso" }, "precio": 2800, "etiquetas": ["vegano", "sinTacc"] },
+        { "id": "cortado", "nombre": { "es": "Cortado", "en": "Cortado" }, "precio": 3000, "etiquetas": ["veggie", "sinTacc"] },
+        {
+          "id": "flat-white",
+          "nombre": { "es": "Flat white", "en": "Flat white" },
+          "descripcion": { "es": "Doble espresso con leche texturizada.", "en": "Double espresso with velvety milk." },
+          "precio": 4200,
+          "etiquetas": ["veggie", "sinTacc"],
+          "vaBienCon": "budin-almendras"
+        },
+        {
+          "id": "latte-almendra",
+          "nombre": { "es": "Latte de almendras", "en": "Almond latte" },
+          "descripcion": {
+            "es": "Con leche de almendras y un toque de canela. El de la casa.",
+            "en": "With almond milk and a hint of cinnamon. Our signature."
+          },
+          "precio": 4800,
+          "etiquetas": ["vegano", "sinTacc"],
+          "recomendado": true
+        },
+        {
+          "id": "submarino",
+          "nombre": { "es": "Submarino", "en": "Hot chocolate" },
+          "descripcion": { "es": "Leche caliente con barra de chocolate semiamargo.", "en": "Hot milk with a dark chocolate bar." },
+          "precio": 4400,
+          "etiquetas": ["veggie"],
+          "vaBienCon": "chipa"
+        }
+      ]
+    },
+    {
+      "id": "te",
+      "nombre": { "es": "Té e infusiones", "en": "Tea" },
+      "momentos": ["desayuno", "brunch", "merienda"],
+      "items": [
+        { "id": "te-hebras", "nombre": { "es": "Té en hebras", "en": "Loose leaf tea" }, "descripcion": { "es": "Negro, verde o frutos rojos.", "en": "Black, green or berries." }, "precio": 3200, "etiquetas": ["vegano", "sinTacc"] },
+        { "id": "chai-latte", "nombre": { "es": "Chai latte", "en": "Chai latte" }, "precio": 4500, "etiquetas": ["veggie", "sinTacc"] }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "nombre": { "es": "Desayunos", "en": "Breakfast" },
+      "momentos": ["desayuno"],
+      "items": [
+        {
+          "id": "tostadas-palta",
+          "nombre": { "es": "Tostadas con palta y huevo", "en": "Avocado toast with egg" },
+          "descripcion": { "es": "Pan de masa madre, palta, huevo poché y semillas.", "en": "Sourdough, avocado, poached egg and seeds." },
+          "precio": 7800,
+          "etiquetas": ["veggie"],
+          "recomendado": true,
+          "vaBienCon": "flat-white"
+        },
+        {
+          "id": "yogur-granola",
+          "nombre": { "es": "Yogur con granola", "en": "Yogurt and granola" },
+          "descripcion": { "es": "Yogur natural, granola de la casa, frutas de estación y miel.", "en": "Plain yogurt, house granola, seasonal fruit and honey." },
+          "precio": 6200,
+          "etiquetas": ["veggie"]
+        },
+        { "id": "medialunas", "nombre": { "es": "Medialunas (x2)", "en": "Croissants (x2)" }, "precio": 3200, "etiquetas": ["veggie"] }
+      ]
+    },
+    {
+      "id": "brunch-salado",
+      "nombre": { "es": "Brunch", "en": "Brunch" },
+      "momentos": ["brunch"],
+      "items": [
+        {
+          "id": "huevos-revueltos",
+          "nombre": { "es": "Huevos revueltos en brioche", "en": "Scrambled eggs on brioche" },
+          "descripcion": { "es": "Con queso crema, cebolla de verdeo y ensalada verde.", "en": "With cream cheese, spring onion and green salad." },
+          "precio": 9200,
+          "etiquetas": ["veggie"],
+          "recomendado": true
+        },
+        {
+          "id": "bowl-quinoa",
+          "nombre": { "es": "Bowl de quinoa", "en": "Quinoa bowl" },
+          "descripcion": { "es": "Quinoa, calabaza asada, garbanzos, hojas verdes y aderezo de tahini.", "en": "Quinoa, roasted squash, chickpeas, greens and tahini dressing." },
+          "precio": 9800,
+          "etiquetas": ["vegano", "sinTacc"]
+        }
+      ]
+    },
+    {
+      "id": "pasteleria",
+      "nombre": { "es": "Pastelería", "en": "Cakes & pastries" },
+      "momentos": ["desayuno", "brunch", "merienda"],
+      "items": [
+        {
+          "id": "budin-almendras",
+          "nombre": { "es": "Budín de almendras y limón", "en": "Almond & lemon loaf" },
+          "descripcion": { "es": "Hecho con harina de almendras. Húmedo y cítrico.", "en": "Made with almond flour. Moist and zesty." },
+          "precio": 4200,
+          "etiquetas": ["veggie", "sinTacc"],
+          "recomendado": true
+        },
+        { "id": "torta-chocolate", "nombre": { "es": "Torta de chocolate", "en": "Chocolate cake" }, "precio": 6500, "etiquetas": ["veggie"], "vaBienCon": "espresso" },
+        { "id": "cheesecake", "nombre": { "es": "Cheesecake de frutos rojos", "en": "Berry cheesecake" }, "precio": 6800, "etiquetas": ["veggie"] },
+        { "id": "alfajor-maicena", "nombre": { "es": "Alfajor de maicena", "en": "Cornstarch alfajor" }, "precio": 2600, "etiquetas": ["veggie", "sinTacc"] },
+        { "id": "chipa", "nombre": { "es": "Chipá (x6)", "en": "Cheese bread (x6)" }, "precio": 3500, "etiquetas": ["veggie", "sinTacc"] }
+      ]
+    },
+    {
+      "id": "salados",
+      "nombre": { "es": "Salados", "en": "Savoury" },
+      "momentos": ["brunch", "merienda"],
+      "items": [
+        { "id": "tostado-jyq", "nombre": { "es": "Tostado de jamón y queso", "en": "Ham & cheese toastie" }, "precio": 6900 },
+        { "id": "tostado-veggie", "nombre": { "es": "Tostado veggie", "en": "Veggie toastie" }, "descripcion": { "es": "Queso, tomate, rúcula y pesto.", "en": "Cheese, tomato, rocket and pesto." }, "precio": 6900, "etiquetas": ["veggie"] }
+      ]
+    }
+  ]
+}

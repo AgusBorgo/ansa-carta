@@ -1,0 +1,31 @@
+{
+  "name": "menu-qr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cartas digitales con QR para bares, cafés y restaurantes — Anse Studio",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:estatico": "EXPORT_ESTATICO=1 next build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "postcss": "^8.5.30"
+  }
+}

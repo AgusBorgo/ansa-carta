@@ -1,0 +1,57 @@
+{
+  "slug": "bodegon-lumbre",
+  "nombre": "Bodegón Lumbre",
+  "bajada": { "es": "Cocina a las brasas y vermut" },
+  "logo": "/locales/bodegon-lumbre/logo.svg",
+  "zonaHoraria": "America/Argentina/Buenos_Aires",
+  "idiomas": ["es"],
+  "tema": {
+    "colores": {
+      "fondo": "#14110F",
+      "superficie": "#1E1A17",
+      "texto": "#F4ECE2",
+      "textoSuave": "#B9AC9C",
+      "acento": "#E8A33D",
+      "sobreAcento": "#1A1208",
+      "linea": "#332C26"
+    },
+    "fuentes": {
+      "titulos": { "familia": "Bebas Neue", "pesos": [400], "respaldo": "sans-serif" },
+      "texto": { "familia": "Work Sans", "pesos": [400, 600, 700], "respaldo": "sans-serif" }
+    },
+    "radio": 6
+  },
+  "contacto": {
+    "whatsapp": "5491169455966",
+    "instagram": "anse_studio_",
+    "direccion": "Dirección de ejemplo 456"
+  },
+  "horarios": [
+    { "dias": "Martes a domingo", "horas": "12 a 16 h · 19 a 2 h" }
+  ],
+  "momentos": [
+    { "id": "mediodia", "nombre": { "es": "Mediodía" }, "desde": "12:00", "hasta": "16:00" },
+    { "id": "noche", "nombre": { "es": "Noche" }, "desde": "19:00", "hasta": "02:00" }
+  ],
+  "categorias": [
+    {
+      "id": "brasas",
+      "nombre": { "es": "A las brasas" },
+      "momentos": ["mediodia", "noche"],
+      "items": [
+        { "id": "ojo-de-bife", "nombre": { "es": "Ojo de bife" }, "descripcion": { "es": "350 g con papas rústicas." }, "precio": 21000, "recomendado": true, "vaBienCon": "malbec" },
+        { "id": "provoleta", "nombre": { "es": "Provoleta" }, "descripcion": { "es": "Con orégano y ají molido." }, "precio": 8500, "etiquetas": ["veggie", "sinTacc"] },
+        { "id": "verduras-brasa", "nombre": { "es": "Verduras a la brasa" }, "descripcion": { "es": "Morrón, berenjena, cebolla y chimichurri." }, "precio": 9000, "etiquetas": ["vegano", "sinTacc"] }
+      ]
+    },
+    {
+      "id": "vermuteria",
+      "nombre": { "es": "Vermutería" },
+      "momentos": ["noche"],
+      "items": [
+        { "id": "vermut-casa", "nombre": { "es": "Vermut de la casa" }, "descripcion": { "es": "Con soda, naranja y aceituna." }, "precio": 5500, "etiquetas": ["vegano", "sinTacc"], "recomendado": true },
+        { "id": "malbec", "nombre": { "es": "Copa de malbec" }, "precio": 6000, "etiquetas": ["vegano", "sinTacc"] }
+      ]
+    }
+  ]
+}
